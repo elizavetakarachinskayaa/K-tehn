@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_1C"
+            android:icon="@drawable/ic_1c"
+            android:title="СИСТЕМА УПРАВЛЕНИЯ “1С:КАСКАД" />
+        <item
+            android:id="@+id/action_uslugi"
+            android:icon="@drawable/ic_uslugi"
+            android:title="Услуги" />
+        <item
+            android:id="@+id/action_podhod"
+            android:icon="@drawable/ic_podxod"
+            android:title="Наш подход" />
+
+        <item
+            android:id="@+id/kontakti"
+            android:icon="@drawable/ic_contact"
+            android:title="Контакты" />
+
+    </group>
+
+    <item android:title="Как нас найти? ">
+        <menu>
+
+            <item
+                android:id="@+id/adress"
+                android:icon="@drawable/ic_location"
+                android:title="Адрес" />
+        </menu>
+    </item>
+
+</menu>

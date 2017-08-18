@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fon"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ekarachinskaya.k_tehn.obr_sv"
+    tools:showIn="@layout/app_bar_obr_sv">
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"    >
+
+        <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Задать вопрос" />
+
+        <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Введите имя"
+        android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Введите свой e-mail"
+            />
+
+        <Spinner
+            android:id="@+id/SpinnerFeedbackType"
+            android:layout_height="wrap_content"
+
+            android:layout_width="fill_parent"
+            android:entries="@array/feedbacktypelist">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/edittextfeedbackbody"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:hint="Введите текст сообщения"
+            android:inputType="textMultiLine"
+            android:lines="5"/>
+
+        <CheckBox
+            android:id="@+id/Checkboxresponce"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="Желаете получить ответ?" />
+
+        <Button
+            android:id="@+id/Buttonsend"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="?attr/colorPrimary"
+            android:onClick="sendFeedback"
+            android:text="Отправить сообщение" />
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

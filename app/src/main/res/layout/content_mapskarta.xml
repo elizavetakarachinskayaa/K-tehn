@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fon"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ekarachinskaya.k_tehn.MapsActivity"
+    android:weightSum="1"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp"
+        android:gravity="center"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.89"
+        tools:context="com.example.ekarachinskaya.k_tehn.MapsActivity"
+        android:layout_marginTop="112dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top|left"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="29dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:backgroundTint="?attr/colorPrimary"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/map"
+        app:layout_anchorGravity="bottom|right"
+        app:srcCompat="@drawable/ic_back" />
+
+</RelativeLayout>

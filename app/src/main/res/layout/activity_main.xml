@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="409dp"
+        android:layout_height="83dp"
+        android:layout_weight="0.67"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="349dp"
+            android:layout_height="258dp"
+            android:gravity="center"
+            android:text="Каскад технологии"
+            android:textColor="#2F4F4F"
+            android:textSize="50dp" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.31">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="103dp"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:textColor="#2F4F4F"
+            android:textStyle="italic"
+
+            android:text="МЫ ПРЕДЛАГАЕМ НАШИМ КЛИЕНТАМ, КОМПАНИЯМ МАЛОГО И СРЕДНЕГО БИЗНЕСА — УСЛУГИ КОМПЛЕКСНОГО ИТ АУТСОРСИНГА" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/voiti"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@null"
+        android:onClick="goToActivity2"
+        android:text="Вход" />
+
+
+</LinearLayout>
